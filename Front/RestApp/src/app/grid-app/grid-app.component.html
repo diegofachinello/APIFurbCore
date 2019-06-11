@@ -1,0 +1,21 @@
+<a href="#" id="new-button">Dados cadastrados:</a>
+<table>
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Email</th>  
+        <th>Senha</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let usuarioInfo of usuarioData"> 
+        <td>{{ usuarioInfo.id }}</td>
+        <td>{{ usuarioInfo.email }}</td>
+        <td>{{ usuarioInfo.senha }}</td>
+        <td>
+            <a href="#" (click)="editRecord(usuarioInfo)">Editar</a>
+            <a href="#" (click)="deleteRecord(usuarioInfo)">Deletar</a>
+        </td>
+    </tr>
+</tbody>
+</table>

@@ -1,0 +1,16 @@
+<div>
+  <h2 *ngIf="!usuarioInfo || usuarioInfo.id === undefined">Adicionar registro</h2>
+  <h2 *ngIf="usuarioInfo && usuarioInfo.id !== undefined">Atualizar registro (ID: {{usuarioInfo.id}})</h2>
+  <form>
+      <div class="form-group">
+          <label for="email-input">Email</label>
+          <input type="text" id="email-input" name="email-input" [(ngModel)]="usuarioInfo.email" class="form-control" />
+      </div>
+      <div class="form-group">
+          <label for="senha-input">Senha</label>
+          <input type="text" id="senha-input" name="senha-input" [(ngModel)]="usuarioInfo.senha" class="form-control" />
+      </div>
+      <button type="button" class="btn btn-primary" (click)="addOrUpdateUsuario($event);">{{ buttonText }}</button>
+  </form>
+ </div>
+ 

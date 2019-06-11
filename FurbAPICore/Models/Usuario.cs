@@ -19,4 +19,10 @@ namespace FurbAPICore.Models
         public string Senha { get; set; }
 
     }
+
+   /* public class UserAuth : Usuario
+    {
+        public string Token { get; set; }
+    }
+    */
 }
