@@ -15,6 +15,8 @@ Functions:
 
 - Frontend in Anglular 5 
 
+- TypeScript
+
 - HTML5
 
 - Bootstrap
